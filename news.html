@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="css/newstyle.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+</head>
+
+<body>
+    <header>
+        <div class="wapper">
+            <!-- 首頁 -->
+            <a href="#" class="home">
+                <img src="icon/homeLogo.svg" alt="">
+            </a>
+            <!-- 導航欄 -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <p>關於卡啡那</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>最新消息</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>優質咖啡</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>商品一覽</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>門市據點</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>聯絡我們</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <div class="container">
+            <ul class="main_ul">
+                <li>
+                    <h5>latest</h5>
+                    <h1>NEWS</h1>
+                    <h3>最新消息</h3>
+                </li>
+                <li onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                    <div class="information">
+                        <h5> Moon Festival Gift Box｜<br>
+                            中秋禮盒 <br></h5>
+                        <p> 月見馬德蓮禮盒 ｜Tsukimi Madeleine (10pcs)
+                        </p>
+                    </div>
+                </li>
+                <li onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                    <div class="information">
+                        <h5> July🌟 New Arrival ｜<br>
+                            卡啡那七月新品上市｜ <br></h5>
+                        <p> 經典搖滾三部曲 ｜Elvis Trilogy
+                        </p>
+                    </div>
+                </li>
+                <li onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                    <div class="information">
+                        <h5> April New Arrival ｜<br>
+                            卡啡那四月新品上市｜<br></h5>
+                        <p>玫瑰覆盆子舒芙蕾 ｜Rose & Raspberry Souffle'
+                        </p>
+                    </div>
+                </li>
+                <li onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                    <div class="information">
+                        <h5> January New Arrival ｜<br>
+                            卡啡那草莓季新品上市｜<br></h5>
+                        <p> 法漫草莓舒芙蕾｜Strawberry Souffle'
+                        </p>
+                    </div>
+                </li>
+                <li onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                    <div class="information">
+                        <h5> ChristmasNew Arrival ｜<br>
+                            卡啡那聖誕新品上市｜<br></h5>
+                        <p> 櫻桃巧克舒芙蕾｜Chocolate Cherry Souffle'
+                        </p>
+                    </div>
+                </li>
+                <li onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                    <div class="information">
+                        <h5>August New Arrival ｜ <br>
+                            周年慶期間限定｜ <br></h5>
+                        <p> 可可露比舒芙蕾｜Ruby Chocolate Soffle'
+                        </p>
+                    </div>
+                </li>
+                <li onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                    <div class="information">
+                        <h5> July New Arrival ｜ <br>
+                            七月新品上市｜<br></h5>
+                        <p> 觸見藍洋｜Touch of Ocean
+                        </p>
+                    </div>
+                </li>
+                <li onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                    <div class="information">
+                        <h5> June ✨New Arrival <br>
+                            芒果季限定上市｜<br></h5>
+                        <p> 感受盛夏浪潮
+                        </p>
+                    </div>
+                </li>
+                <li onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+                    <div class="information">
+                        <h5>April✨New Arrival <br>
+                            ｜四月新品上市｜<br></h5>
+                        <p>
+                        </p>
+                    </div>
+                </li>
+                <li onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+                    <div class="information">
+                        <h5> 【除夕營業時間調整公告】<br></h5>
+                        <p> 除夕團圓夜，是該與最愛的親友們好好聚聚
+                        </p>
+                    </div>
+                </li>
+                <li onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+                    <div class="information">
+                        <h5>【卡啡那新春樂刮卡】 <br></h5>
+                        <p> 新春樂刮 熱鬧登場💯</p>
+                    </div>
+                </li>
+                <li onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+                    <div class="information">
+                        <h5> 卡啡那 Ｘ 藝奇 大墩店同慶優惠 <br></h5>
+                        <p> 優惠日期：1/25 – 2/3
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+
+        <div class="btnright cursor"></div>
+        <div class="btnleft cursor"></div>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 12</div>
+                    <img src="img/01.jpg" style="width:100%; ">
+                    <p>
+                    <h5>Moon Festival Gift Box｜中秋禮盒🌙</h5><br>
+
+                    月見馬德蓮禮盒 ｜Tsukimi Madeleine (10pcs)<br>
+
+                    h6想像被包覆在蛋白中的蛋黃，就如同天上的一輪明月<br>
+                    因此在日文中，食物名稱若有加入「月見」兩字，代表的即是蛋黃<br>
+                    而卡啡那主廚在瑪德蓮中加入的鹹蛋黃，即是象徵圓滿之意<br>
+                    希望每一位吃到月見瑪德蓮的人，都能感受到我們獻上的滿點祝福<br>
+
+
+
+                    🎈點擊連結，立即線上預購，將會有專人與您聯繫：http://sc.piee.pw/KPSTQ<br>
+                    🎈月見瑪德蓮預購折價80元優惠券領取辦法：https://pse.is/HUNS6<br>
+
+                    📢若有企業需要試吃，歡迎直接聯繫臉書粉絲團，將有專人與您接洽：https://pse.is/GLNEA<br>
+
+
+                    📢預購期間：8/1 – 8/31<br>
+                    📢取貨期間：9/1 – 9/13<br>
+                    </p>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 12</div>
+                    <img src="img/02.jpg" style="width:100%">
+                    <p>
+                    <h5>July🌟 New Arrival ｜卡啡那七月新品上市｜</h5><br>
+
+                    🎉 法式蛋糕新品上市<br>
+                    柳橙星空 Orange & Oolong Cake<br>
+                    霜柚珊瑚海 Pomelo & Mango Cake<br>
+                    阿爾森堡 Lychee & Cardamom Cake<br>
+                    巧奇檸檬千層 Lemon Mille Crepes<br>
+                    紫夜 Strawberry & Custrad Apple Cake<br>
+
+                    🎊舒芙蕾新品上市<br>
+                    貓王舒芙蕾 Elvis Souffle<br>
+
+                    🎊常溫蛋糕新品上市<br>
+                    蜜冠洋梨塔 Pear&Orange Tart<br>
+                    覆盆子派捲 Raspberry Roll<br>
+                    流沙巧克力 Salted Egg Yolk Chocolate Cake<br>
+
+                    📣優惠獲取方法<br>
+                    目前所有優惠活動已轉移至卡啡那LINE@官方帳號，請至LINE上搜尋 @caffaina 即可加入好友<br></p>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 12</div>
+                    <img src="img/03.jpg" style="width:100%">
+                    <p><h5>April🌟 New Arrival ｜卡啡那四月新品上市｜</h5><br>
+                        🎉 法式蛋糕新品上市<br>
+                        覆盆子千層 Raspberry-Feuille<br>
+                        白浪起士 Grapefruit & Cheese Cake<br>
+                        西尾抹茶千層 Matcha Mille Crepes<br>
+                        焦糖維蘇威 Caramel Pear Cake<br>
+                        紅寶蘇黎世 Strawberry & Plum Cake<br>
+                        雪藏水果杯 Tropical Fruit Cup<br>
+                       
+                        🎊舒芙蕾新品上市<br>
+                        覆盆子玫瑰舒芙蕾 Rose & Raspberry Souffle<br>
+                        
+                        🎊常溫蛋糕新品上市<br>
+                        綿綿柚果 Pomelo Cake<br>
+                        鳳梨布雪 Pineapple Bouchee<br>
+                        櫻桃巧克力 Chocolate & Cherry Cake<br>
+                        蘭姆葡萄派捲 Grape & Rum Roll<br>
+                        沙感蛋糕 Sandkuchen<br>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 12</div>
+                    <img src="img/04.jpg" style="width:100%">
+                    <p><h5>January✨New Arrival ｜卡啡那草莓季新品上市｜</h5><br>
+
+                        🎉 法式蛋糕新品上市<br>
+                        草莓水果捲 Strawberry Fruit Roll<br>
+                        草莓獺福 Strawberry Mochi<br>
+                        雪莓莉莉 Strawberry Mille Crepes<br>
+                        草莓千層 Strawberry-Feuille<br>
+                        草莓芙蓮 Strawberry Fraisier<br>
+                        
+                        🎊舒芙蕾新品上市<br>
+                        法漫草莓舒芙蕾 Strawberry Souffle<br>
+                        
+                        🎊五吋蛋糕新品上市<br>
+                        草莓戚風 Strawberry Chiffon Cake<br>
+                        草莓典藏曲 Strawberry Chocolate Cake<br>
+                        戀風草莓塔 Strawberry Tart (6吋)<br>
+                        草莓芙蓮 Strawberry Fraisier<br>
+                      </p>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5 / 12</div>
+                    <img src="img/05.jpg" style="width:100%">
+                    <p><h5>Christmas✨New Arrival ｜卡啡那聖誕新品上市｜</h5><br>
+                        🎉 法式蛋糕新品上市<br>
+                        焦糖蘋果閃電 Caramel Apple Eclair<br>
+                        雪球卡彭 Mascarpone & Pineapple Cake<br>
+                        紅寶蘇黎世 Strawberry & Plum Cake<br>
+                        芙芙巧克 Chocolate & Cherry Puree<br>
+
+                        
+                        🎊舒芙蕾新品上市<br>
+                        櫻桃巧克舒芙蕾 Chocolate & Cherry Souffle<br>
+                        緋夜藍莓舒芙蕾 Blueberry Souffle<br>
+                        十八號紅玉舒服蕾 Black Tea Souffle<br>
+                        曜黑芝麻舒芙蕾 Seasome Souffle<br>
+
+                        點擊以下連結，立即獲得十一月新品85折的電子優惠券：https://imvip.io/caffaina/coupons/2qFiA （優惠券期限至11/15止）</p>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">6 / 12</div>
+                    <img src="img/06.jpg" style="width:100%">
+                    <p><h5>August✨New Arrival ｜周年慶期間限定｜</h5><br>
+                        可可露比舒芙蕾 ｜Ruby Chocolate Souffle’<br>
+
+                        披上狂野的粉紅豹紋<br>
+                        顛覆你對巧克力的味覺想像<br>
+                        選用數量稀少的紅寶石巧克力<br>
+                        營造出不僅是味覺上的酸甜滋味，更創造視覺上的紅粉風暴<br>
+
+                        ⏰販售期間：8月1號起至8月31日止 （數量有限，完售則提前下架）<br>
+                        ‼週年慶期間僅販售可可露比舒芙蕾、仲夏金芒舒芙蕾、經典法頌舒芙蕾<br>
+
+                        可可露比舒芙蕾內餡🍰<br>
+                        ✔紅寶石巧克力<br>
+                        ✔乳酪</p>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 12</div>
+                    <img src="img/07.jpg" style="width:100%">
+                    <p><h5>July ✨New Arrival ｜七月新品上市｜</h5><br>
+
+                        觸見藍洋<br>
+                        大海迎風捎來的期待，遠渡成櫥窗內的風景<br>
+                        
+                        🎉 法式蛋糕新品上市<br>
+                        碧海狂想曲 Chocolate with Peach Cake<br>
+                        花生美夢 Chocolate with Peach Cake<br>
+                        水漾紅桃 Red Peach Mousse<br>
+                        芒夏之日 Mango with Pear Cake<br>
+
+                        
+                        🎊常溫蛋糕新品上市<br>
+                        紅心爵士 Guava Cake<br>
+                        夏威夷乳酪塔 Pineapple Cheese Tart<br>
+                        堅果蛋糕塔 Mixed Nuts Tart<br>
+                        雙莓司康 Berry Scone<br>
+                        香蕉巧克捲 Banana Chocolate Roll<br>
+
+                        點擊以下連結，立即獲得七月新品85折的電子優惠券：imvip.io/caffaina/coupons/Cbjaa （到7/15止）</p>
+
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">8 / 12</div>
+                    <img src="img/08.jpg" style="width:100%">
+                    <p><h5>June ✨New Arrival ｜芒果季限定上市｜</h5><br>
+
+                        感受盛夏浪潮<br>
+                        選用精心栽種的愛文芒果，開啟今年夏天的熱情甜蜜<br>
+                        
+                        🎉 法式蛋糕新品上市<br>
+                        芒果千層 Mango Feuille<br>
+                        鮮芒生乳捲（切片/整條） Mango Swiss Roll<br>
+
+                        
+                        🎇舒芙蕾新品上市<br>
+                        仲夏金芒舒芙蕾 Mango Souffle’<br>
+
+                        點擊以下連結，立即獲得芒果季商品85折的電子優惠券：bit.ly/ccgmango （到6/16止）</p>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">9 / 12</div>
+                    <img src="img/09.jpg" style="width:100%">
+                    <p><h5>April✨New Arrival ｜四月新品上市｜</h5><br>
+
+                        盛花之春<br>
+                        只在巧手中綻放，等待品嚐後燦爛<br>
+                        
+                        🎉 法式蛋糕新品上市<br>
+                        抹石茶蝶 Adzuki Bean with Matcha Cake<br>
+                        櫻花百香 Salted Sakura & Passionfruit Puree<br>
+                        經典香草千層 Vanilla Feuille
+
+                        
+                        🎊常溫蛋糕新品上市<br>
+                        抹茶可麗露 Matcha Cannele<br>
+                        醇郁朱古力 Lemon Icing Chocolate Cake<br>
+                        克林姆檸檬泡芙 Lemon Cream Puff<br>
+                        
+                        🎇舒芙蕾新品上市<br>
+                        香水鳳梨舒芙蕾 Pineapple Souffle’</p>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">10 / 12</div>
+                    <img src="img/10.png" style="width:100%">
+                    <p><h5>【除夕營業時間調整公告】</h5>
+
+                        除夕團圓夜，是該與最愛的親友們好好聚聚<br>
+
+                        卡啡那 全台門市<br>
+                        2/4 (一) 營業至晚間6點<br>
+                        2/5 (二) 大年初一開始正常營業<br>
+
+                        造成您的不便，敬請見諒🙇</p>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">11 / 12</div>
+                    <img src="img/11.jpg" style="width:100%">
+                    <p><h5>【卡啡那新春樂刮卡】 新春樂刮 熱鬧登場💯</h5><br>
+
+                        卡啡那同時也推出專屬我們的刮刮樂，共三款不同面額等你來湊<br>
+                        張張有獎，超過1,000個以上的免費舒芙蕾、甜點與飲料等你來贏取🏆<br>
+
+                        📆活動期間：1/31起至抽完為止<br>
+                        📣活動內容：凡在活動期間內消費滿300元、500元、1000元，即可換取對應金額的新春樂刮卡，單筆消費最多換取兩張<br>
+                        ⚠注意事項：樂刮卡數量有限，送完為止<br>
+
+                        ————貼心提醒————-<br>
+
+                        ❶換取範例：消費滿1000 元，可選擇換取一張1000元的樂刮卡，或2張500元的樂刮卡。<br>
+                        ❷卡啡那有權隨時修改活動條款和細則以及任何與本次活動相關之安排。<br>
+
+                        請持續鎖定 卡啡那 Caffaina Coffee Gallery，不錯過任何優惠活動與資訊🆕<br>
+                        📱 #加入卡啡那IG：https://bit.ly/2DEwtbm</p>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">12 / 12</div>
+                    <img src="img/12.png" style="width:100%">
+                    <p><h5>卡啡那 Ｘ 藝奇 大墩店同慶優惠</h5><br>
+
+                        卡啡那大墩店 Ｘ 藝奇大墩店 開幕同慶優惠<br>
+
+                        優惠日期：1/25 – 2/3<br>
+
+                        卡啡那大墩店優惠內容：<br>
+                        凡於活動期間內，持藝奇大墩店消費發票，到卡啡那大墩店消費，即享有全館9折優惠（僅限自製商品）<br>
+
+                        活動加碼：<br>
+
+                        凡於活動期間內，持藝奇大墩店消費發票，到卡啡那大墩店消費，公開打卡並在文中加入 ＃卡啡那Ｘ藝奇，即享有全館8折優惠（僅限自製商品）<br>
+
+
+
+                        藝奇大墩店優惠內容：<br>
+
+                        凡於活動期間內，持卡啡那大墩店消費發票，到藝奇大墩店消費，即可享有「套餐」88折優惠<br>
+
+
+
+                        注意事項：<br>
+
+                        1.不與其他優惠合併使用，不適用於外送。<br>
+
+                        2.卡啡那與藝奇有權隨時修改活動條款和細則以及任何與本次活動相關之安排。<br>
+
+                    </p>
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+    </main>
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <script src="js/scrollJS.js"></script>
+    <script src="js/lightbox.js"></script>
+
+
+
+</body>
+
+</html>
