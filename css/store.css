@@ -1,0 +1,463 @@
+@charset "UTF-8";
+/* reset */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Serif TC", "Noto Sans TC", serif, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+h2 {
+  font-size: 5.6rem;
+}
+
+h3 {
+  font-size: 4.8rem;
+}
+
+h4 {
+  font-size: 3.2rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+}
+
+b {
+  font-weight: 500;
+}
+
+p {
+  margin: 0;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+header {
+  height: 72px;
+  width: 100vw;
+}
+
+header .wapper {
+  height: 72px;
+  width: 100%;
+  background-color: #0c3141;
+  padding: 0 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1030;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+header .wapper .home {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .wapper .home::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header .wapper .home img {
+  height: 32px;
+  width: 180px;
+}
+
+header .wapper nav ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+header .wapper nav ul li {
+  margin: 0 20px;
+}
+
+header .wapper nav ul li:first-child {
+  margin-left: 0;
+}
+
+header .wapper nav ul li:last-child {
+  margin-right: 0;
+}
+
+header .wapper nav ul li a {
+  height: 100%;
+  line-height: 72px;
+  overflow: hidden;
+}
+
+header .wapper nav ul li a:hover p {
+  color: white;
+}
+
+header .wapper nav ul li a:hover p:before {
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+header .wapper nav ul li a p {
+  height: 100%;
+  color: rgba(255, 255, 255, 0.35);
+  position: relative;
+  -webkit-transition: 0.2s cubic-bezier(0.19, 0.77, 0.28, 0.9);
+  transition: 0.2s cubic-bezier(0.19, 0.77, 0.28, 0.9);
+}
+
+header .wapper nav ul li a p:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transition: 0.2s cubic-bezier(0.19, 0.77, 0.28, 0.9);
+  transition: 0.2s cubic-bezier(0.19, 0.77, 0.28, 0.9);
+}
+
+html body main {
+  color: black;
+  background-image: url(../img/back.jpg);
+}
+
+html body main .container {
+  padding-top: 162px;
+}
+
+html body main .container .title {
+  width: 100%;
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body main .container .title h3 {
+  margin: auto;
+}
+
+html body main .container .Options {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  padding-left: 60%;
+}
+
+@media (max-width: 1024px) {
+  html body main .container .Options {
+    padding-left: 10%;
+  }
+}
+
+html body main .container .Options h5 {
+  width: 63px;
+}
+
+html body main .container .Options .btn {
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+html body main .container .Options .btn:hover {
+  color: #333333;
+  border-bottom: 1px solid #333333;
+}
+
+html body main .container .Options .Taichung_Options {
+  width: 100%;
+  padding-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body main .container .Options .Kaohsiung_Options {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body main .container .row img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+html body main .container .row .stores {
+  width: 100%;
+  margin-bottom: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  html body main .container .row .stores {
+    margin-bottom: 65px;
+  }
+}
+
+html body main .container .row .stores h4 {
+  padding: 30px 0px 10px 0px;
+  border-bottom: 1px solid black;
+}
+
+html body main .container .row .stores h5 {
+  padding: 10px 0px 0px 0px;
+}
+
+html body main .container .row .Taichung {
+  width: 100%;
+  position: relative;
+}
+
+html body main .container .row .Taichung .Dadun_store {
+  position: relative;
+}
+
+html body main .container .row .Taichung .Dadun_store .img {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+}
+
+html body main .container .row .Taichung .Dadun_store .text {
+  height: 100%;
+  padding: 10%;
+}
+
+@media (max-width: 1024px) {
+  html body main .container .row .Taichung .Dadun_store .text {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    height: 60%;
+  }
+}
+
+@media (max-width: 1024px) {
+  html body main .container .row .Taichung .Dadun_store {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+html body main .container .row .Taichung .Huilai_store {
+  position: relative;
+}
+
+html body main .container .row .Taichung .Huilai_store .text {
+  height: 100%;
+  padding: 10%;
+}
+
+@media (max-width: 1024px) {
+  html body main .container .row .Taichung .Huilai_store .text {
+    height: 60%;
+  }
+}
+
+html body main .container .row .Taichung .Huilai_store .img {
+  background-image: url("../img/惠來01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  height: 100%;
+  width: 90%;
+}
+
+@media (max-width: 1024px) {
+  html body main .container .row .Taichung .Huilai_store {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+html body main .container .row .Kaohsiung {
+  width: 100%;
+  position: relative;
+}
+
+html body main .container .row .Kaohsiung .Mingcheng_store {
+  position: relative;
+}
+
+html body main .container .row .Kaohsiung .Mingcheng_store .img {
+  background-image: url("../img/明誠01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 90%;
+  margin: auto;
+}
+
+html body main .container .row .Kaohsiung .Mingcheng_store .text {
+  height: 100%;
+  padding: 10%;
+}
+
+@media (max-width: 1024px) {
+  html body main .container .row .Kaohsiung .Mingcheng_store .text {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    height: 60%;
+  }
+}
+
+@media (max-width: 1024px) {
+  html body main .container .row .Kaohsiung .Mingcheng_store {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+html body main .container .row .Kaohsiung .museum_store {
+  position: relative;
+}
+
+html body main .container .row .Kaohsiung .museum_store .text {
+  height: 100%;
+  padding: 10%;
+}
+
+@media (max-width: 1024px) {
+  html body main .container .row .Kaohsiung .museum_store .text {
+    height: 60%;
+  }
+}
+
+html body main .container .row .Kaohsiung .museum_store .img {
+  background-image: url("../img/美術館01.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  height: 100%;
+  width: 90%;
+}
+
+@media (max-width: 1024px) {
+  html body main .container .row .Kaohsiung .museum_store {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+html body main .container .row .Kaohsiung .exploration_store {
+  position: relative;
+}
+
+html body main .container .row .Kaohsiung .exploration_store .img {
+  background-image: url("../img/文化01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 90%;
+  margin: auto;
+}
+
+html body main .container .row .Kaohsiung .exploration_store .text {
+  height: 100%;
+  padding: 10%;
+}
+
+@media (max-width: 1024px) {
+  html body main .container .row .Kaohsiung .exploration_store .text {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    height: 60%;
+  }
+}
+
+@media (max-width: 1024px) {
+  html body main .container .row .Kaohsiung .exploration_store {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=store.css.map */

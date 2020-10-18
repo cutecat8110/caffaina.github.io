@@ -1,0 +1,197 @@
+@import "./common";
+@import "./header";
+html {
+    body {
+        main {
+            color: rgb(0, 0, 0);
+            background-image: url(../img/back.jpg);
+            .container {
+                padding-top: 162px;
+
+                .title {
+                    width: 100%;
+                    padding-bottom: 30px;
+                    display: flex;
+                    h3 {
+                        margin: auto;
+                    }
+                }
+                .Options {
+                    padding-top: 30px;
+                    padding-bottom: $space-large;
+
+                    padding-left: 60%;
+                    @include laptop{
+                        padding-left: 10%;
+                    }
+                    h5 {
+                        width: 63px;
+                    }
+                    .btn {
+                        font-weight: 700;
+                        line-height: 1.5;
+                        margin: 0;
+                        font-size: 1.5rem;
+                        cursor: pointer;
+                        &:hover {
+                            color: rgb(51, 51, 51);
+                            border-bottom: 1px solid rgb(51, 51, 51);
+                        }
+                    }
+
+                    .Taichung_Options {
+                        width: 100%;
+                        padding-bottom: $space-small;
+                        display: flex;
+                    }
+                    .Kaohsiung_Options {
+                        width: 100%;
+                        display: flex;
+                    }
+                }
+                .row {
+                    img{
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                    }
+                    .stores {
+                        // height: 614px;
+                        width: 100%;
+                        margin-bottom: 200px;
+                        // background-color: dodgerblue;
+                        display: flex;
+                        @include laptop {
+                            margin-bottom: 65px;
+                        }
+                        h4 {
+                            padding: 30px 0px 10px 0px;
+                            border-bottom: 1px solid black;
+                        }
+                        h5 {
+                            padding: 10px 0px 0px 0px;
+                        }
+                    }
+                    .Taichung {
+                        width: 100%;
+                        position: relative;
+                        .Dadun_store {
+                            position: relative;
+                            .img {
+                                // background-image: url("../img/大墩01.jpg");
+                                // background-repeat: no-repeat;
+                                // background-size: cover;
+                                height: 100%;
+                                width: 90%;
+                                margin: auto;
+                            }
+                            .text {
+                                height: 100%;
+                                padding: 10%;
+                                @include laptop {
+                                    order: -1;
+                                    height: 60%;
+                                }
+                            }
+                            @include laptop {
+                                flex-direction: column;
+                            }
+                        }
+                        .Huilai_store {
+                            position: relative;
+                            .text {
+                                height: 100%;
+                                padding: 10%;
+                                @include laptop {
+                                    height: 60%;
+                                }
+                            }
+                            .img {
+                                background-image: url("../img/惠來01.jpg");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                margin: auto;
+                                height: 100%;
+                                width: 90%;
+                            }
+                            @include laptop {
+                                flex-direction: column;
+                            }
+                        }
+                    }
+                    .Kaohsiung {
+                        width: 100%;
+                        position: relative;
+                        // display: none;
+
+                        .Mingcheng_store {
+                            position: relative;
+                            .img {
+                                background-image: url("../img/明誠01.jpg");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                height: 100%;
+                                width: 90%;
+                                margin: auto;
+                            }
+                            .text {
+                                height: 100%;
+                                padding: 10%;
+                                @include laptop {
+                                    order: -1;
+                                    height: 60%;
+                                }
+                            }
+                            @include laptop {
+                                flex-direction: column;
+                            }
+                        }
+                        .museum_store {
+                            position: relative;
+                            .text {
+                                height: 100%;
+                                padding: 10%;
+                                @include laptop {
+                                    height: 60%;
+                                }
+                            }
+                            .img {
+                                background-image: url("../img/美術館01.JPG");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                margin: auto;
+                                height: 100%;
+                                width: 90%;
+                            }
+                            @include laptop {
+                                flex-direction: column;
+                            }
+                        }
+                        .exploration_store {
+                            position: relative;
+                            .img {
+                                background-image: url("../img/文化01.jpg");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                height: 100%;
+                                width: 90%;
+                                margin: auto;
+                            }
+                            .text {
+                                height: 100%;
+                                padding: 10%;
+                                @include laptop {
+                                    order: -1;
+                                    height: 60%;
+                                }
+                            }
+                            @include laptop {
+                                flex-direction: column;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
