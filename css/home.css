@@ -454,15 +454,101 @@ main .swiper-container .swiper-slide > .background.hover {
           transform: scale(1.15, 1.15);
 }
 
+main .swiper-container .swiper-button-next {
+  width: unset;
+}
+
+main .swiper-container .swiper-button-next:hover .line {
+  opacity: 1;
+}
+
+main .swiper-container .swiper-button-next .line {
+  width: 200px;
+  height: 2px;
+  background-color: #ffffff;
+  opacity: 0.3;
+  position: relative;
+  -webkit-transition: 0.3s cubic-bezier(0.19, 0.77, 0.28, 0.9);
+  transition: 0.3s cubic-bezier(0.19, 0.77, 0.28, 0.9);
+}
+
+main .swiper-container .swiper-button-next .line::before {
+  content: "";
+  height: 2px;
+  width: 20px;
+  background-color: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform-origin: center right;
+          transform-origin: center right;
+  -webkit-transform: translateY(-50%) rotate(40deg);
+          transform: translateY(-50%) rotate(40deg);
+}
+
+main .swiper-container .swiper-button-next .line::after {
+  content: "";
+  height: 2px;
+  width: 20px;
+  background-color: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform-origin: center right;
+          transform-origin: center right;
+  -webkit-transform: translateY(-50%) rotate(-40deg);
+          transform: translateY(-50%) rotate(-40deg);
+}
+
 main .swiper-container .swiper-button-next::after {
-  content: "123";
-  font-family: 思源黑體;
-  font-size: 12px;
-  text-transform: none !important;
-  letter-spacing: 0;
-  text-transform: none;
-  font-variant: initial;
-  line-height: 1;
-  color: #ffffff;
+  content: "";
+}
+
+main .swiper-container .swiper-button-prev {
+  width: unset;
+}
+
+main .swiper-container .swiper-button-prev:hover .line {
+  opacity: 1;
+}
+
+main .swiper-container .swiper-button-prev .line {
+  width: 200px;
+  height: 2px;
+  background-color: #ffffff;
+  opacity: 0.3;
+  position: relative;
+}
+
+main .swiper-container .swiper-button-prev .line::before {
+  content: "";
+  height: 2px;
+  width: 20px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  -webkit-transform: translateY(-50%) rotate(40deg);
+          transform: translateY(-50%) rotate(40deg);
+}
+
+main .swiper-container .swiper-button-prev .line::after {
+  content: "";
+  height: 2px;
+  width: 20px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  -webkit-transform: translateY(-50%) rotate(-40deg);
+          transform: translateY(-50%) rotate(-40deg);
+}
+
+main .swiper-container .swiper-button-prev::after {
+  content: "";
 }
 /*# sourceMappingURL=home.css.map */

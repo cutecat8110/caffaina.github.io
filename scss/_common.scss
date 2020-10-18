@@ -94,9 +94,16 @@ h6 {
 
 b {
     font-weight: 500;
+    
 }
 
 p {
     margin: 0;
     font-family: "Noto Sans TC", sans-serif;
 }
+
+// button-color
+
+$button-color: rgba(255,255,255,0.35);
+$button-color-hover: rgba(255,255,255,1);
+

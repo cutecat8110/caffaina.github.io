@@ -223,16 +223,95 @@ main {
             }
         }
         .swiper-button-next {
+            width: unset;
+            &:hover .line
+            {
+                opacity: 1;
+            }
+            .line {
+                width: 200px;
+                height: 2px;
+                background-color: #ffffff;
+                opacity: 0.3;
+
+                position: relative;
+
+                transition: 0.3s cubic-bezier(0.19, 0.77, 0.28, 0.9);
+
+                &::before {
+                    content: "";
+                    height: 2px;
+                    width: 20px;
+                    background-color:  #ffffff;
+
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+
+                    transform-origin: center right;
+                    transform: translateY(-50%) rotate(40deg);
+                }
+                &::after {
+                    content: "";
+                    height: 2px;
+                    width: 20px;
+                    background-color:  #ffffff;
+
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+
+                    transform-origin: center right;
+                    transform: translateY(-50%) rotate(-40deg);
+                }
+            }
             &::after {
-                content: "123";
-                font-family: 思源黑體;
-                font-size: 12px;
-                text-transform: none !important;
-                letter-spacing: 0;
-                text-transform: none;
-                font-variant: initial;
-                line-height: 1;
-                color: #ffffff;
+                content: "";
+            }
+        }
+        .swiper-button-prev {
+            width: unset;
+            &:hover .line
+            {
+                opacity: 1;
+            }
+            .line {
+                width: 200px;
+                height: 2px;
+                background-color: #ffffff;
+                opacity: 0.3;
+
+                position: relative;
+
+                &::before {
+                    content: "";
+                    height: 2px;
+                    width: 20px;
+                    background-color: #ffffff;
+
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+
+                    transform-origin: center left;
+                    transform: translateY(-50%) rotate(40deg);
+                }
+                &::after {
+                    content: "";
+                    height: 2px;
+                    width: 20px;
+                    background-color: #ffffff;
+
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+
+                    transform-origin: center left;
+                    transform: translateY(-50%) rotate(-40deg);
+                }
+            }
+            &::after {
+                content: "";
             }
         }
     }
