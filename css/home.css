@@ -80,7 +80,7 @@ header .wapper {
   height: 72px;
   width: 100%;
   background-color: #0c3141;
-  padding: 0 150px;
+  padding: 0 160px;
   position: fixed;
   top: 0;
   left: 0;
@@ -123,6 +123,40 @@ header .wapper .home img {
   width: 180px;
 }
 
+@media (max-width: 768px) {
+  header .wapper .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .wapper .hamburger .hamburger-btn {
+    background-color: violet;
+    height: 32px;
+    width: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .wapper nav {
+    height: calc(100vh - 72px);
+    width: 100%;
+    background-color: #104156;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    display: none;
+  }
+  header .wapper nav.selected {
+    display: block;
+  }
+}
+
 header .wapper nav ul {
   height: 100%;
   display: -webkit-box;
@@ -131,6 +165,18 @@ header .wapper nav ul {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+}
+
+@media (max-width: 768px) {
+  header .wapper nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
 }
 
 header .wapper nav ul li {
@@ -145,9 +191,15 @@ header .wapper nav ul li:last-child {
   margin-right: 0;
 }
 
+@media (max-width: 768px) {
+  header .wapper nav ul li {
+    height: 56px;
+    margin: 0;
+  }
+}
+
 header .wapper nav ul li a {
   height: 100%;
-  line-height: 72px;
   overflow: hidden;
 }
 
@@ -165,9 +217,19 @@ header .wapper nav ul li a:hover p:before {
 header .wapper nav ul li a p {
   height: 100%;
   color: rgba(255, 255, 255, 0.35);
+  line-height: 72px;
   position: relative;
   -webkit-transition: 0.2s cubic-bezier(0.19, 0.77, 0.28, 0.9);
   transition: 0.2s cubic-bezier(0.19, 0.77, 0.28, 0.9);
+}
+
+@media (max-width: 768px) {
+  header .wapper nav ul li a p {
+    line-height: 56px;
+    margin: 0 20px;
+    text-align: center;
+    border-bottom: 1px solid #134E67;
+  }
 }
 
 header .wapper nav ul li a p:before {
@@ -207,6 +269,7 @@ html {
 main {
   height: calc(100vh - 72px);
   width: 100vw;
+  background-color: #000000;
 }
 
 main .slideMask {
@@ -251,7 +314,7 @@ main .swiper-container .swiper-slide .subnav_container {
 }
 
 main .swiper-container .swiper-slide .subnav_container .textbox {
-  width: calc(520px + 35px * 2);
+  width: calc(520px + 60px * 2);
   position: relative;
   z-index: 4;
 }
@@ -270,9 +333,9 @@ main .swiper-container .swiper-slide .subnav_container .textbox {
 
 main .swiper-container .swiper-slide .subnav_container .textbox .subnav_wapper {
   height: 600px;
-  width: calc(520px + 35px * 2);
+  width: calc(520px + 60px * 2);
   position: absolute;
-  top: calc((600px + 35px) * -1);
+  top: calc((600px + 60px) * -1);
   left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -395,7 +458,7 @@ main .swiper-container .swiper-slide .subnav_container .sixAngle {
   width: 520px;
   -webkit-clip-path: url(#pc);
           clip-path: url(#pc);
-  margin-bottom: 35px;
+  margin-bottom: 60px;
   z-index: 3;
 }
 
@@ -405,6 +468,7 @@ main .swiper-container .swiper-slide .subnav_container .sixAngle {
     width: 360px;
     -webkit-clip-path: url(#pc-small);
             clip-path: url(#pc-small);
+    margin-bottom: 35px;
   }
 }
 
@@ -414,15 +478,18 @@ main .swiper-container .swiper-slide .subnav_container .sixAngle {
     width: 250px;
     -webkit-clip-path: url(#laptop);
             clip-path: url(#laptop);
+    margin-bottom: 35px;
   }
 }
 
-main .swiper-container .swiper-slide .subnav_container .sixAngle .sixAngle_background {
+main .swiper-container .swiper-slide .subnav_container .sixAngle .background {
   height: calc(100vh - 72px);
   width: 100vw;
-  background-image: url("https://placem.at/place?w=1920&h=1080&txt=0");
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
+  -webkit-filter: brightness(1.3);
+          filter: brightness(1.3);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -432,7 +499,7 @@ main .swiper-container .swiper-slide .subnav_container .sixAngle .sixAngle_backg
   transition: 0.5s cubic-bezier(0.19, 0.77, 0.28, 0.9);
 }
 
-main .swiper-container .swiper-slide .subnav_container .sixAngle .sixAngle_background.hover {
+main .swiper-container .swiper-slide .subnav_container .sixAngle .background.hover {
   -webkit-transform: scale(1.15, 1.15);
           transform: scale(1.15, 1.15);
 }
@@ -440,7 +507,11 @@ main .swiper-container .swiper-slide .subnav_container .sixAngle .sixAngle_backg
 main .swiper-container .swiper-slide > .background {
   height: 100%;
   width: 100%;
-  background-image: url("https://placem.at/place?w=1920&h=1080&txt=0");
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -454,16 +525,103 @@ main .swiper-container .swiper-slide > .background.hover {
           transform: scale(1.15, 1.15);
 }
 
+main .swiper-container .swiper-slide .link-1 {
+  background-image: url(../img/home/2-Dark.jpg);
+}
+
+main .swiper-container .swiper-slide .link-2 {
+  background-image: url(../img/home/3-Dark.jpg);
+}
+
+main .swiper-container .swiper-slide .link-3 {
+  background-image: url(../img/home/4-Dark.jpg);
+}
+
+main .swiper-container .swiper-slide .link-4 {
+  background-image: url(../img/home/5-Dark.jpg);
+}
+
+main .swiper-container .swiper-pagination {
+  width: unset;
+  left: unset;
+  bottom: unset;
+  right: 160px;
+  top: calc(50% + 600px/2);
+}
+
+@media (max-width: 1440px) {
+  main .swiper-container .swiper-pagination {
+    top: calc(50% + 416px/2);
+  }
+}
+
+@media (max-width: 1024px) {
+  main .swiper-container .swiper-pagination {
+    top: calc(50% + 289px/2);
+  }
+}
+
+main .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  font-family: "Noto Sans TC", sans-serif;
+  width: 8px;
+  height: 8px;
+  text-align: center;
+  margin: 0 15px;
+  line-height: 8px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0);
+  opacity: 0.3;
+  background: #ffffff;
+}
+
+main .swiper-container .swiper-pagination .swiper-pagination-bullet:first-child {
+  margin-left: 0;
+}
+
+main .swiper-container .swiper-pagination .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+
+main .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  color: #fff;
+  background: rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+main .swiper-container .swiper-pagination .swiper-pagination-bullet-active:before {
+  content: "";
+  height: 2px;
+  width: calc(100% + 5px);
+  background: #ffffff;
+  opacity: 0.3;
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.5s cubic-bezier(0.19, 0.77, 0.28, 0.9);
+  transition: 0.5s cubic-bezier(0.19, 0.77, 0.28, 0.9);
+}
+
 main .swiper-container .swiper-button-next {
   width: unset;
+  top: calc(50% - 60px);
+  right: 160px;
 }
 
 main .swiper-container .swiper-button-next:hover .line {
   opacity: 1;
+  -webkit-transform: scale(1.15, 1.15) translateX(-7.5%);
+          transform: scale(1.15, 1.15) translateX(-7.5%);
 }
 
 main .swiper-container .swiper-button-next .line {
-  width: 200px;
+  width: calc(60px + 35px);
   height: 2px;
   background-color: #ffffff;
   opacity: 0.3;
@@ -475,7 +633,7 @@ main .swiper-container .swiper-button-next .line {
 main .swiper-container .swiper-button-next .line::before {
   content: "";
   height: 2px;
-  width: 20px;
+  width: calc(15px + 5px);
   background-color: #ffffff;
   position: absolute;
   right: 0;
@@ -489,7 +647,7 @@ main .swiper-container .swiper-button-next .line::before {
 main .swiper-container .swiper-button-next .line::after {
   content: "";
   height: 2px;
-  width: 20px;
+  width: calc(15px + 5px);
   background-color: #ffffff;
   position: absolute;
   right: 0;
@@ -506,24 +664,30 @@ main .swiper-container .swiper-button-next::after {
 
 main .swiper-container .swiper-button-prev {
   width: unset;
+  top: calc(50% - 60px);
+  left: 160px;
 }
 
 main .swiper-container .swiper-button-prev:hover .line {
   opacity: 1;
+  -webkit-transform: scale(1.15, 1.15) translateX(7.5%);
+          transform: scale(1.15, 1.15) translateX(7.5%);
 }
 
 main .swiper-container .swiper-button-prev .line {
-  width: 200px;
+  width: calc(60px + 35px);
   height: 2px;
   background-color: #ffffff;
   opacity: 0.3;
   position: relative;
+  -webkit-transition: 0.3s cubic-bezier(0.19, 0.77, 0.28, 0.9);
+  transition: 0.3s cubic-bezier(0.19, 0.77, 0.28, 0.9);
 }
 
 main .swiper-container .swiper-button-prev .line::before {
   content: "";
   height: 2px;
-  width: 20px;
+  width: calc(15px + 5px);
   background-color: #ffffff;
   position: absolute;
   left: 0;
@@ -537,7 +701,7 @@ main .swiper-container .swiper-button-prev .line::before {
 main .swiper-container .swiper-button-prev .line::after {
   content: "";
   height: 2px;
-  width: 20px;
+  width: calc(15px + 5px);
   background-color: #ffffff;
   position: absolute;
   left: 0;

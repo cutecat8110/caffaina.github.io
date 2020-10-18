@@ -17,7 +17,7 @@ html {
 main {
     height: calc(100vh - #{$header-hight});
     width: 100vw;
-
+    background-color: #000000;
     // 六角形
     .slideMask {
         position: fixed;
@@ -47,7 +47,7 @@ main {
                 align-items: center;
 
                 .textbox {
-                    width: calc(#{$pc-width} + #{$space-medium} * 2);
+                    width: calc(#{$pc-width} + #{$space-large} * 2);
 
                     position: relative;
                     z-index: index($elements, textbox);
@@ -62,10 +62,10 @@ main {
 
                     .subnav_wapper {
                         height: $pc-height;
-                        width: calc(#{$pc-width} + #{$space-medium} * 2);
+                        width: calc(#{$pc-width} + #{$space-large} * 2);
 
                         position: absolute;
-                        top: calc((#{$pc-height} + #{$space-medium}) * -1);
+                        top: calc((#{$pc-height} + #{$space-large}) * -1);
                         left: 0;
 
                         display: flex;
@@ -169,7 +169,7 @@ main {
                     height: $pc-height;
                     width: $pc-width;
                     clip-path: url(#pc);
-                    margin-bottom: $space-medium;
+                    margin-bottom: $space-large;
 
                     z-index: index($elements, sixAngle);
 
@@ -177,19 +177,24 @@ main {
                         height: $pc-small-height;
                         width: $pc-small-width;
                         clip-path: url(#pc-small);
+                        margin-bottom: $space-medium;
                     }
 
                     @include laptop {
                         height: $laptop-height;
                         width: $laptop-width;
                         clip-path: url(#laptop);
+                        margin-bottom: $space-medium;
                     }
 
-                    .sixAngle_background {
+                    .background {
                         height: calc(100vh - #{$header-hight});
                         width: 100vw;
-                        background-image: url("https://placem.at/place?w=1920&h=1080&txt=0");
-                        filter: brightness(1.1); //亮度
+
+                        filter: brightness(1.3); //亮度
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
 
                         position: absolute;
                         top: 0;
@@ -208,7 +213,11 @@ main {
             > .background {
                 height: 100%;
                 width: 100%;
-                background-image: url("https://placem.at/place?w=1920&h=1080&txt=0");
+
+                filter: brightness(1); //亮度
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
 
                 position: absolute;
                 top: 0;
@@ -221,15 +230,101 @@ main {
                     transform: scale(1.15, 1.15);
                 }
             }
+            // .background {
+            //     background-image: url(https://placem.at/places?w=1920&h=1080&txt=0);
+            // }
+            .link-1 {
+                background-image: url(../img/home/2-Dark.jpg);
+
+            }
+            .link-2 {
+                background-image: url(../img/home/3-Dark.jpg);
+            }
+            .link-3 {
+                background-image: url(../img/home/4-Dark.jpg);
+            }
+            .link-4 {
+                background-image: url(../img/home/5-Dark.jpg);
+            }
         }
+        .swiper-pagination{
+            width: unset;
+            left: unset;
+            bottom: unset;
+            right: $space-X-large;
+            top: calc(50% + #{$pc-height}/2);
+
+            @include pc-small {
+                top: calc(50% + #{$pc-small-height}/2);
+            }
+
+            @include laptop {
+                top: calc(50% + #{$laptop-height}/2);
+            }
+
+
+            
+            .swiper-pagination-bullet {
+                font-family: "Noto Sans TC", sans-serif;
+                width: 8px;
+                height: 8px;
+                text-align: center;
+                margin: 0 $space-small;
+                line-height: 8px;
+                font-size: 12px;
+                color: rgba(0, 0, 0, 0);
+                opacity: 0.3;
+                background: #ffffff;
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+              }
+          
+              .swiper-pagination-bullet-active {
+                opacity: 1;
+                color: #fff;
+                background: rgba(0, 0,
+                 0, 0);
+                position: relative;
+                &:before {
+                    content: "";
+                    height: 2px;
+                    width: calc(100% + #{$space-x-small});
+                    background: #ffffff;
+                    opacity: 0.3;
+
+                    position: absolute;
+                    bottom: -7px;
+                    left: 50%;
+
+                    transform-origin: right top;
+                    transform: scale(1);
+                    transform: translateX(-50%);
+                    transition: 0.5s cubic-bezier(0.19, 0.77, 0.28, 0.9);
+                }
+
+               
+                
+              }
+        }
+       
+
+        //右側控制器
         .swiper-button-next {
             width: unset;
-            &:hover .line
-            {
+
+            top: calc(50% - #{$space-large});
+            right: $space-X-large;
+            &:hover .line {
                 opacity: 1;
+                transform: scale(1.15, 1.15) translateX(-7.5%);
             }
             .line {
-                width: 200px;
+                width: calc(#{$space-large} + #{$space-medium});
                 height: 2px;
                 background-color: #ffffff;
                 opacity: 0.3;
@@ -241,8 +336,8 @@ main {
                 &::before {
                     content: "";
                     height: 2px;
-                    width: 20px;
-                    background-color:  #ffffff;
+                    width: calc(#{$space-small} + #{$space-x-small});
+                    background-color: #ffffff;
 
                     position: absolute;
                     right: 0;
@@ -254,8 +349,8 @@ main {
                 &::after {
                     content: "";
                     height: 2px;
-                    width: 20px;
-                    background-color:  #ffffff;
+                    width: calc(#{$space-small} + #{$space-x-small});
+                    background-color: #ffffff;
 
                     position: absolute;
                     right: 0;
@@ -269,24 +364,31 @@ main {
                 content: "";
             }
         }
+
+        //左側控制器
         .swiper-button-prev {
             width: unset;
-            &:hover .line
-            {
+
+            top: calc(50% - #{$space-large});
+            left: $space-X-large;
+            &:hover .line {
                 opacity: 1;
+                transform: scale(1.15, 1.15) translateX(+7.5%);
             }
             .line {
-                width: 200px;
+                width: calc(#{$space-large} + #{$space-medium});
                 height: 2px;
                 background-color: #ffffff;
                 opacity: 0.3;
 
                 position: relative;
 
+                transition: 0.3s cubic-bezier(0.19, 0.77, 0.28, 0.9);
+
                 &::before {
                     content: "";
                     height: 2px;
-                    width: 20px;
+                    width: calc(#{$space-small} + #{$space-x-small});
                     background-color: #ffffff;
 
                     position: absolute;
@@ -299,7 +401,7 @@ main {
                 &::after {
                     content: "";
                     height: 2px;
-                    width: 20px;
+                    width: calc(#{$space-small} + #{$space-x-small});
                     background-color: #ffffff;
 
                     position: absolute;

@@ -28,8 +28,12 @@
             <a href="#" class="home">
                 <img src="icon/homeLogo.svg" alt="">
             </a>
-
+            <!-- 漢堡條 -->
+            <div class="hamburger">
+                <div class="hamburger-btn"></div>
+            </div>
             <!-- 導航欄 -->
+            
             <nav>
                 <ul>
                     <li>
@@ -113,10 +117,10 @@
                             <p>每日限時限量提供，遵守主廚堅持現點現烤的最高原則， 只為了讓每一位到店的您，品嚐到如雲朵般的蓬鬆，如戀愛般的幸褔滋味。</p>
                         </div>
                         <div class="sixAngle">
-                            <div class="sixAngle_background"></div>
+                            <div class="background link-1"></div>
                         </div>
                     </div>
-                    <div class="background"></div>
+                    <div class="background link-1"></div>
                 </div>
                 <div class="swiper-slide">
                     <div class="subnav_container">
@@ -133,10 +137,10 @@
                             <p>無論是法式甜點、歐式麵包或任一款商品，皆是我們的主廚悉心打造的藝術，每一季不斷地讓您享受味覺體驗。</p>
                         </div>
                         <div class="sixAngle">
-                            <div class="sixAngle_background"></div>
+                            <div class="background link-2"></div>
                         </div>
                     </div>
-                    <div class="background"></div>
+                    <div class="background link-2"></div>
                 </div>
                 <div class="swiper-slide">
                     <div class="subnav_container">
@@ -153,10 +157,10 @@
                             <p>卡啡那不僅提供COFFEE GALLERY的空間，也讓在這裡放下腳步的人擁有時間，可以細細雕琢與品味生活中的美好事物。</p>
                         </div>
                         <div class="sixAngle">
-                            <div class="sixAngle_background"></div>
+                            <div class="background link-3"></div>
                         </div>
                     </div>
-                    <div class="background"></div>
+                    <div class="background link-3"></div>
                 </div>
                 <div class="swiper-slide">
                     <div class="subnav_container">
@@ -171,16 +175,19 @@
                                 </a>
                             </div>
                             <p>我們致力於提供有別於傳統咖啡館的消費體驗，注重咖啡師與顧客之間的互動，並提供我們心目中最完美的一杯咖啡，讓您也被咖啡文化的氛圍感動。</p>
+                            
                         </div>
                         <div class="sixAngle">
-                            <div class="sixAngle_background"></div>
+                            <div class="background link-4"></div>
                         </div>
                     </div>
-                    <div class="background"></div>
+                    <div class="background link-4"></div>
+                    
                 </div>
-                <!-- 先開發一個 -->
             </div>
-
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- 控制器 -->
             <div class="swiper-button-next">
                 <div class="line"></div>
             </div>
@@ -205,11 +212,22 @@
     <!-- Animate on scroll library JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script src="js/index.js"></script>
+    <script src="js/home.js"></script>
+
+    <script src="js/header.js"></script>
+
 
     <script>
         // 輪播
         var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 35,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (index + 1) + '</span>';
+                },
+            },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
