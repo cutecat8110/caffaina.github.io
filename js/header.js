@@ -1,3 +1,3 @@
-$(".hamburger-btn").click(function () {
-    $(this).parent().next().toggleClass('selected')
+$(".hamburger").click(function () {
+    $(this).next().toggleClass('selected')
 })

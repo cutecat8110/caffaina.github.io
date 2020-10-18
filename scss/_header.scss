@@ -1,9 +1,11 @@
+@import "common";
+
 $header-hight: 72px;
 
 header {
     height: $header-hight;
     width: 100vw;
-    
+
     .wapper {
         height: $header-hight;
         width: 100%;
@@ -18,70 +20,106 @@ header {
 
         display: flex;
         justify-content: space-between;
-        align-items: stretch;
+        align-items: center;
 
+        @include pc-small {
+            padding: 0 $space-large;
+        }
+
+        @include laptop {
+            padding: 0 $space-medium;
+        }
         .home {
-            position: relative;
-
             display: flex;
             align-items: center;
             justify-content: center;
 
-            &::before {
+            position: relative;
+
+            &:before {
                 content: "";
 
-                height: 100%;
+                height: 48px;
                 width: 100%;
 
                 position: absolute;
-                top: 0;
-                left: 0;
+                top: 50%;
+                left: 50%;
+
+                transform: translate(-50%, -50%);
             }
+
             img {
                 height: 32px;
                 width: 180px;
             }
         }
-        @include pad {
-            .hamburger{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                .hamburger-btn{
-                    background-color: violet;
-                    height: 32px;
-                    width: 32px;
-                }
-            }
-        }
-        
 
         nav {
-            @include pad {
-                height: calc(100vh - #{$header-hight});
-                width: 100%;
-                background-color: #104156;
+            .hamburger{
+                @include pad {
+                    height: 32px;
+                    width: 32px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    position: relative;
+                    &:hover .hamburger-btn{
+                        background-color: #f5d000;
+                    }
 
-                position: absolute;
-                top: $header-hight;
-                left: 0;
-                display:none;
-                &.selected{
-                    display:block;
+                    &:before{
+                        content: "";
+                        height: 48px;
+                        width: 48px;
+
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                    }
+                    
+                }
+                .hamburger-btn{
+                    @include pad {
+                        height: 2px;
+                        width: 100%;
+                        background-color: #ccae00;
+                        
+                    }
                 }
             }
+            
+            
             ul {
-                height: 100%;
-
                 display: flex;
-                align-items: stretch;
                 @include pad {
-                    flex-direction: column;
-                    align-items: stretch;
-                }
+                    height: calc(100vh - #{$header-hight});
+                    width: 100vw;
+                    background-color:  #104156;
+                    
+                    position: absolute;
+                    top: $header-hight;
+                    left: 0;
 
+                    flex-direction: column;
+                    display:none;
+                }
                 li {
                     margin: 0 20px;
+
+                    @include laptop {
+                        margin: 0 10px;
+                    }
+
+                    @include pad {
+                        height: 48px;
+                        margin: 0;
+                        border-bottom: 1px solid #165B79;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
 
                     &:first-child {
                         margin-left: 0;
@@ -91,55 +129,56 @@ header {
                         margin-right: 0;
                     }
 
-                    @include pad {
-                        height: 56px;
-                        margin: 0;
-                    }
-
                     a {
-                        height: 100%;
-                        
-                        overflow: hidden;
-
-                        &:hover p {
-                            color: rgba(255, 255, 255, 1);
+                        &:hover h6 {
+                            color: #f5d000;
                         }
-                        &:hover p:before {
-                            transform-origin: right top;
+                        &:hover h6:before {
+                            transform-origin: right;
                             transform: scale(1);
                         }
 
-                        p {
-                            height: 100%;
-                            color: rgba(255, 255, 255, 0.35);
-                            line-height: $header-hight;
+                        h6 {
+                            color: #ccae00;
+
                             position: relative;
-                            transition: 0.2s cubic-bezier(0.19, 0.77, 0.28, 0.9);
 
-                            @include pad {
-                                line-height: 56px;
-                                margin: 0 20px;
-                                text-align: center;
-                                border-bottom: 1px solid #134E67;
-                            }
+                            transition: color 0.25s ease-out;
 
+                            
                             &:before {
                                 content: "";
                                 width: 100%;
-                                height: 2px;
-                                background: rgba(255, 255, 255, 0.3);
+                                height: 1px;
+                                background: #ccae00;
 
                                 position: absolute;
-                                bottom: 0;
-                                left: 0;
+                                bottom: -7px;
+                                right: 0;
 
                                 transform: scaleX(0);
-                                transform-origin: left top;
-                                transition: 0.2s cubic-bezier(0.19, 0.77, 0.28, 0.9);
+                                transform-origin: left;
+                                transition: 0.25s ease-out;
+                            }
+
+                            &:after {
+                                content: "";
+
+                                height: 48px;
+                                width: 100%;
+
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+
+                                transform: translate(-50%, -50%);
                             }
                         }
                     }
                 }
+            }
+            &>.selected{
+                display:block;
             }
         }
     }
