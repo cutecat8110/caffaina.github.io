@@ -145,7 +145,7 @@ p {
 
 header {
   height: 72px;
-  width: 100vw;
+  width: 100%;
 }
 
 header .wapper {
@@ -590,8 +590,8 @@ main .swiper-container .swiper-slide .subnav_container .sixAngle {
 main .swiper-container .swiper-slide .subnav_container .sixAngle .background {
   height: calc(100vh - 72px);
   width: 100vw;
-  -webkit-filter: brightness(1.3);
-          filter: brightness(1.3);
+  -webkit-filter: brightness(0.85);
+          filter: brightness(0.85);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -612,8 +612,8 @@ main .swiper-container .swiper-slide .subnav_container .sixAngle .background.hov
 main .swiper-container .swiper-slide > .background {
   height: 100%;
   width: 100%;
-  -webkit-filter: brightness(1);
-          filter: brightness(1);
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -631,19 +631,19 @@ main .swiper-container .swiper-slide > .background.hover {
 }
 
 main .swiper-container .swiper-slide .link-1 {
-  background-image: url(../img/home/2-Dark.jpg);
+  background-image: url(../img/home/1-4.jpg);
 }
 
 main .swiper-container .swiper-slide .link-2 {
-  background-image: url(../img/home/3-Dark.jpg);
+  background-image: url(../img/home/2-1.jpg);
 }
 
 main .swiper-container .swiper-slide .link-3 {
-  background-image: url(../img/home/4-Dark.jpg);
+  background-image: url(../img/home/3-2.webp);
 }
 
 main .swiper-container .swiper-slide .link-4 {
-  background-image: url(../img/home/5-Dark.jpg);
+  background-image: url(../img/home/4-1.jpg);
 }
 
 main .swiper-container .swiper-pagination {

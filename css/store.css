@@ -145,7 +145,7 @@ p {
 
 header {
   height: 72px;
-  width: 100vw;
+  width: 100%;
 }
 
 header .wapper {
@@ -353,16 +353,17 @@ header .wapper nav > .selected {
   display: block;
 }
 
-html body main {
+main {
+  width: 100%;
   color: black;
   background-image: url(../img/back.jpg);
 }
 
-html body main .container {
+main .container {
   padding-top: 162px;
 }
 
-html body main .container .title {
+main .container .title {
   width: 100%;
   padding-bottom: 30px;
   display: -webkit-box;
@@ -370,27 +371,27 @@ html body main .container .title {
   display: flex;
 }
 
-html body main .container .title h3 {
+main .container .title h3 {
   margin: auto;
 }
 
-html body main .container .Options {
+main .container .Options {
   padding-top: 30px;
   padding-bottom: 60px;
   padding-left: 60%;
 }
 
 @media (max-width: 1024px) {
-  html body main .container .Options {
+  main .container .Options {
     padding-left: 10%;
   }
 }
 
-html body main .container .Options h5 {
+main .container .Options h5 {
   width: 63px;
 }
 
-html body main .container .Options .btn {
+main .container .Options .btn {
   font-weight: 700;
   line-height: 1.5;
   margin: 0;
@@ -398,12 +399,12 @@ html body main .container .Options .btn {
   cursor: pointer;
 }
 
-html body main .container .Options .btn:hover {
+main .container .Options .btn:hover {
   color: #333333;
   border-bottom: 1px solid #333333;
 }
 
-html body main .container .Options .Taichung_Options {
+main .container .Options .Taichung_Options {
   width: 100%;
   padding-bottom: 15px;
   display: -webkit-box;
@@ -411,20 +412,20 @@ html body main .container .Options .Taichung_Options {
   display: flex;
 }
 
-html body main .container .Options .Kaohsiung_Options {
+main .container .Options .Kaohsiung_Options {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-html body main .container .row img {
+main .container .row img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-html body main .container .row .stores {
+main .container .row .stores {
   width: 100%;
   margin-bottom: 200px;
   display: -webkit-box;
@@ -433,42 +434,42 @@ html body main .container .row .stores {
 }
 
 @media (max-width: 1024px) {
-  html body main .container .row .stores {
+  main .container .row .stores {
     margin-bottom: 65px;
   }
 }
 
-html body main .container .row .stores h4 {
+main .container .row .stores h4 {
   padding: 30px 0px 10px 0px;
   border-bottom: 1px solid black;
 }
 
-html body main .container .row .stores h5 {
+main .container .row .stores h5 {
   padding: 10px 0px 0px 0px;
 }
 
-html body main .container .row .Taichung {
+main .container .row .Taichung {
   width: 100%;
   position: relative;
 }
 
-html body main .container .row .Taichung .Dadun_store {
+main .container .row .Taichung .Dadun_store {
   position: relative;
 }
 
-html body main .container .row .Taichung .Dadun_store .img {
+main .container .row .Taichung .Dadun_store .img {
   height: 100%;
   width: 90%;
   margin: auto;
 }
 
-html body main .container .row .Taichung .Dadun_store .text {
+main .container .row .Taichung .Dadun_store .text {
   height: 100%;
   padding: 10%;
 }
 
 @media (max-width: 1024px) {
-  html body main .container .row .Taichung .Dadun_store .text {
+  main .container .row .Taichung .Dadun_store .text {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
@@ -477,7 +478,7 @@ html body main .container .row .Taichung .Dadun_store .text {
 }
 
 @media (max-width: 1024px) {
-  html body main .container .row .Taichung .Dadun_store {
+  main .container .row .Taichung .Dadun_store {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -485,22 +486,22 @@ html body main .container .row .Taichung .Dadun_store .text {
   }
 }
 
-html body main .container .row .Taichung .Huilai_store {
+main .container .row .Taichung .Huilai_store {
   position: relative;
 }
 
-html body main .container .row .Taichung .Huilai_store .text {
+main .container .row .Taichung .Huilai_store .text {
   height: 100%;
   padding: 10%;
 }
 
 @media (max-width: 1024px) {
-  html body main .container .row .Taichung .Huilai_store .text {
+  main .container .row .Taichung .Huilai_store .text {
     height: 60%;
   }
 }
 
-html body main .container .row .Taichung .Huilai_store .img {
+main .container .row .Taichung .Huilai_store .img {
   background-image: url("../img/惠來01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -510,7 +511,7 @@ html body main .container .row .Taichung .Huilai_store .img {
 }
 
 @media (max-width: 1024px) {
-  html body main .container .row .Taichung .Huilai_store {
+  main .container .row .Taichung .Huilai_store {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -518,16 +519,16 @@ html body main .container .row .Taichung .Huilai_store .img {
   }
 }
 
-html body main .container .row .Kaohsiung {
+main .container .row .Kaohsiung {
   width: 100%;
   position: relative;
 }
 
-html body main .container .row .Kaohsiung .Mingcheng_store {
+main .container .row .Kaohsiung .Mingcheng_store {
   position: relative;
 }
 
-html body main .container .row .Kaohsiung .Mingcheng_store .img {
+main .container .row .Kaohsiung .Mingcheng_store .img {
   background-image: url("../img/明誠01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -536,13 +537,13 @@ html body main .container .row .Kaohsiung .Mingcheng_store .img {
   margin: auto;
 }
 
-html body main .container .row .Kaohsiung .Mingcheng_store .text {
+main .container .row .Kaohsiung .Mingcheng_store .text {
   height: 100%;
   padding: 10%;
 }
 
 @media (max-width: 1024px) {
-  html body main .container .row .Kaohsiung .Mingcheng_store .text {
+  main .container .row .Kaohsiung .Mingcheng_store .text {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
@@ -551,7 +552,7 @@ html body main .container .row .Kaohsiung .Mingcheng_store .text {
 }
 
 @media (max-width: 1024px) {
-  html body main .container .row .Kaohsiung .Mingcheng_store {
+  main .container .row .Kaohsiung .Mingcheng_store {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -559,22 +560,22 @@ html body main .container .row .Kaohsiung .Mingcheng_store .text {
   }
 }
 
-html body main .container .row .Kaohsiung .museum_store {
+main .container .row .Kaohsiung .museum_store {
   position: relative;
 }
 
-html body main .container .row .Kaohsiung .museum_store .text {
+main .container .row .Kaohsiung .museum_store .text {
   height: 100%;
   padding: 10%;
 }
 
 @media (max-width: 1024px) {
-  html body main .container .row .Kaohsiung .museum_store .text {
+  main .container .row .Kaohsiung .museum_store .text {
     height: 60%;
   }
 }
 
-html body main .container .row .Kaohsiung .museum_store .img {
+main .container .row .Kaohsiung .museum_store .img {
   background-image: url("../img/美術館01.JPG");
   background-repeat: no-repeat;
   background-size: cover;
@@ -584,7 +585,7 @@ html body main .container .row .Kaohsiung .museum_store .img {
 }
 
 @media (max-width: 1024px) {
-  html body main .container .row .Kaohsiung .museum_store {
+  main .container .row .Kaohsiung .museum_store {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -592,11 +593,11 @@ html body main .container .row .Kaohsiung .museum_store .img {
   }
 }
 
-html body main .container .row .Kaohsiung .exploration_store {
+main .container .row .Kaohsiung .exploration_store {
   position: relative;
 }
 
-html body main .container .row .Kaohsiung .exploration_store .img {
+main .container .row .Kaohsiung .exploration_store .img {
   background-image: url("../img/文化01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -605,13 +606,13 @@ html body main .container .row .Kaohsiung .exploration_store .img {
   margin: auto;
 }
 
-html body main .container .row .Kaohsiung .exploration_store .text {
+main .container .row .Kaohsiung .exploration_store .text {
   height: 100%;
   padding: 10%;
 }
 
 @media (max-width: 1024px) {
-  html body main .container .row .Kaohsiung .exploration_store .text {
+  main .container .row .Kaohsiung .exploration_store .text {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
@@ -620,7 +621,7 @@ html body main .container .row .Kaohsiung .exploration_store .text {
 }
 
 @media (max-width: 1024px) {
-  html body main .container .row .Kaohsiung .exploration_store {
+  main .container .row .Kaohsiung .exploration_store {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
